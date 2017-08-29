@@ -1,0 +1,25 @@
+{
+    "name": "native-ui-themes",
+    "displayName": "native-ui-themes",
+    "description": "better coding on macOS",
+    "version": "0.0.1",
+    "publisher": "losandes",
+    "scripts": {
+        "build": "node src/build"
+    },
+    "engines": {
+        "vscode": "^1.15.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Native UI - One Dark",
+                "uiTheme": "vs",
+                "path": "./themes/one-dark.json"
+            }
+        ]
+    }
+}
