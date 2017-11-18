@@ -2,10 +2,14 @@
     "name": "native-ui-themes",
     "displayName": "native-ui-themes",
     "description": "better coding on macOS",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "losandes",
     "scripts": {
-        "build": "node src/build"
+        "build": "node src/build",
+        "buildAndCopy": "npm run build; npm run copy;",
+        "copy": "npm run remove; npm run copy:extension",
+        "copy:extension": "cd ../; cp -R vscode-native-ui-themes/. ~/.vscode/extensions/vscode-native-ui-themes",
+        "remove": "cd ~/.vscode/extensions; rm -rf vscode-native-ui-themes;"
     },
     "engines": {
         "vscode": "^1.15.0"
@@ -14,12 +18,38 @@
         "Themes"
     ],
     "contributes": {
-        "themes": [
-            {
-                "label": "Native UI - One Dark",
-                "uiTheme": "vs",
-                "path": "./themes/one-dark.json"
-            }
-        ]
+        "themes": [{
+            "label": "Native UI - One Dark",
+            "uiTheme": "vs",
+            "path": "./themes/one-dark.json"
+        }, {
+            "label": "Native UI - CMU",
+            "uiTheme": "vs",
+            "path": "./themes/cmu.json"
+        }, {
+            "label": "Native UI - CMU (Dark)",
+            "uiTheme": "vs",
+            "path": "./themes/cmu-dark.json"
+        }, {
+            "label": "Native UI - Decks",
+            "uiTheme": "vs",
+            "path": "./themes/decks.json"
+        }, {
+            "label": "Native UI - Decks (Dark)",
+            "uiTheme": "vs",
+            "path": "./themes/decks-dark.json"
+        }, {
+            "label": "Native UI - Geob0t",
+            "uiTheme": "vs",
+            "path": "./themes/geob0t.json"
+        }, {
+            "label": "Native UI - Geob0t (Dim)",
+            "uiTheme": "vs",
+            "path": "./themes/geob0t-dim.json"
+        }, {
+            "label": "Native UI - Geob0t (Dark)",
+            "uiTheme": "vs",
+            "path": "./themes/geob0t-dark.json"
+        }]
     }
 }

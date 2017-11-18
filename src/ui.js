@@ -1,24 +1,32 @@
-module.exports = ui()
+module.exports = function Ui (ui) {
+    ui = Object.assign({}, ui);
 
-function ui () {
-    const topBarBackground = "#eeeeee"
-    const bottomBarBackground = "#ebebeb"
-    const nativeBackground = "#e1e1e1"
-    const nativeBorder = "#c7c7c7"
-    const editorBackground =  "#282c34"
-    const editorText = "#b2b9c8"
-    const editorWidgetBackground = "#21252b"
-    const editorSelectionBackground = "#484e5b"
-    const editorHighlightBackground = "#314365"
-    const editorInsertedBackground = "#00809b" // "#00809b33"
-    const editorLineHighlight = "#383e4a"
-    const editorCursor = "#f8f8f0"
-    const editorWhitespaceForeground = "#3b4048"
-    const editorBorder = "#181a1f"
-    const editorRuler = "#abb2bf" // "#abb2bf26"
-    const tabBorder = "#b1b1b1"
-    const text = "#444444"
-    const highlightedText = "#2387DC"
+    const topBarBackground = ui.topBarBackground || "#eeeeee"
+    const bottomBarBackground = ui.bottomBarBackground || "#ebebeb"
+    const nativeBackground = ui.nativeBackground || "#e1e1e1"
+    const nativeHover = ui.nativeHover || "#c7c7c7"
+    const nativeBorder = ui.nativeBorder || "#c7c7c7"
+    const editorBackground = ui.editorBackground ||  "#282c34"
+    const editorText = ui.editorText || "#b2b9c8"
+    const editorWidgetBackground = ui.editorWidgetBackground || "#21252b"
+    const editorSelectionBackground = ui.editorSelectionBackground || "#484e5b"
+    const editorHighlightBackground = ui.editorHighlightBackground || "#314365"
+    const editorInsertedBackground = ui.editorInsertedBackground || "#00809b" // "#00809b33"
+    const editorLineHighlight = ui.editorLineHighlight || "#383e4a"
+    const editorCursor = ui.editorCursor || "#f8f8f0"
+    const editorWhitespaceForeground = ui.editorWhitespaceForeground || "#3b4048"
+    const editorBorder = ui.editorBorder || "#181a1f"
+    const editorRuler = ui.editorRuler || "#abb2bf" // "#abb2bf26"
+    const tabActiveBackground = ui.tabActiveBackground || "#e1e1e1"
+    const tabInactiveBackground = ui.tabInactiveBackground || "#c7c7c7"
+    const tabBorder = ui.tabBorder || "#b1b1b1"
+    const text = ui.text || "#444444"
+    const highlightedText = ui.highlightedText || "#2387DC"
+    const gitNew = ui.gitNew || "#709e19";
+    const gitModified = ui.gitModified || "#dd6e14";
+    const gitRemoved = ui.gitRemoved || "#9c3bdf";
+    const gitIgnored = ui.gitIgnored || "#abb2bf";
+    const gitConflict = ui.gitConflict || "#e10d0d";
 
     return {
         colors: {
@@ -31,10 +39,10 @@ function ui () {
             "sideBar.foreground": text,
             "sideBarTitle.foreground": text,
             "statusBar.noFolderForeground": text,
-            "list.hoverBackground": nativeBorder,
-            "list.activeSelectionBackground": nativeBorder,
-            "list.inactiveSelectionBackground": nativeBorder,
-            "list.focusBackground": nativeBorder,
+            "list.hoverBackground": nativeHover,
+            "list.activeSelectionBackground": nativeHover,
+            "list.inactiveSelectionBackground": nativeHover,
+            "list.focusBackground": nativeHover,
             "list.activeSelectionForeground": text,
             "list.inactiveSelectionForeground": text,
             "list.highlightForeground": highlightedText,
@@ -42,13 +50,13 @@ function ui () {
             "titleBar.inactiveBackground": topBarBackground,
             "statusBar.background": bottomBarBackground,
             "statusBar.foreground": text,
-            "statusBarItem.hoverBackground": nativeBorder,
-            "tab.activeBackground": nativeBackground,
-            "tab.inactiveBackground": nativeBorder,
+            "statusBarItem.hoverBackground": nativeHover,
+            "tab.activeBackground": tabActiveBackground,
+            "tab.inactiveBackground": tabInactiveBackground,
             "tab.activeForeground": text,
             "tab.inactiveForeground": text,
             "tab.unfocusedInactiveForeground": text,
-            "editorGroupHeader.tabsBackground": nativeBorder,
+            "editorGroupHeader.tabsBackground": tabInactiveBackground,
             "editorGroupHeader.tabsBorder": tabBorder,
             "editorGroup.background": editorBorder,
             "editorGroup.border": editorBorder,
@@ -75,7 +83,12 @@ function ui () {
             "editorSuggestWidget.selectedBackground": "#2c313a",
             "editor.wordHighlightBackground": editorSelectionBackground,
             "editor.wordHighlightStrongBackground": editorRuler,
-            "peekViewEditor.matchHighlightBackground": "#29244b"
+            "peekViewEditor.matchHighlightBackground": "#29244b",
+            "gitDecoration.untrackedResourceForeground": gitNew,
+            "gitDecoration.modifiedResourceForeground": gitModified,
+            "gitDecoration.deletedResourceForeground": gitRemoved,
+            "gitDecoration.ignoredResourceForeground": gitIgnored,
+            "gitDecoration.conflictingResourceForeground": gitConflict
 
 
             // "input.background": "#1d1f23",
@@ -147,6 +160,12 @@ function ui () {
             // "notification.background": editorWidgetBackground,
             // "debugToolBar.background": editorWidgetBackground,
             // "statusBar.debuggingBackground": editorWidgetBackground
+
+            // "gitDecoration.modifiedResourceForeground": Color for modified git resources. Used file labels and the SCM viewlet.
+            // "gitDecoration.deletedResourceForeground": Color for deleted git resources. Used file labels and the SCM viewlet.
+            // "gitDecoration.untrackedResourceForeground": Color for untracked git resources. Used file labels and the SCM viewlet.
+            // "gitDecoration.ignoredResourceForeground": Color for ignored git resources. Used file labels and the SCM viewlet.
+            // "gitDecoration.conflictingResourceForeground": Color for conflicting git resources. Used file labels and the SCM viewlet.
         }
     }
 }

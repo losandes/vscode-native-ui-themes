@@ -1,28 +1,42 @@
 module.exports = function Theme (Ui) {
+                                        // #040232
+                                        // #02234b
+                                        // #31609f
+                                        // #00849b
+                                        // #148e8f
+                                        // #2d4313
+                                        // #085a28
+                                        // #0a6516
+                                        // #128757
+                                        // #36a249
+                                        // #f2b732
+                                        // #ab1a2f
+                                        // #b90711
+
     const colors = {
-        background: "#282c34ff",        // dark background
-        foreground:  "#bbbbbb",         // "#bbbbbbff" // text
+        background: "#040232",          // dark background
+        foreground:  "#bbbbbb",         // text
         text: "#abb2bf",
         comments: "#5c6370",            // comments and punctuation
-        params: "#a6b2c0",              // "#b9c0ca" // function params / commas
-        strings: "#98c379",             // "#98c378"
-        markupDiff: "#e0c285",
-        diff: "#569cd6",
-        numbers: "#e5c07b",             // "#c49060" // JS numbers, md bold, java imports, etc.
-        constants: "#d19a66",           // "#D18C4E", #D2945D // JS constants, HTML attributes, etc.
-        functions: "#61afef",           // JS functions/operators
-        functionCall: "#61afef",        // function execution
-        variables: "#e06c75",           // JS variables, HTML Tags
-        bitwiseOperators: "#56b6c2",    // globals, bitwise operators, regex (i.e. the forward slashes in regex)
-        keywords: "#c678dd",            // "#C178DD" "#C679DD" // reserved keywords (const, return, public, private, etc.)
-        embedded: "#be4f44",            // ?
-        info: "#6796e6",
-        warning: "#cd9731",
-        error: "#f44747",               // "#ff0000"
+        params: "#a6b2c0",              // function params / commas
+        strings: "#009ab4",             // strings
+        markupDiff: "#dbb622",
+        diff: "#609aeb",
+        numbers: "#f2b732",             // JS numbers, md bold, java imports, etc.
+        constants: "#ef8026",           // JS constants, HTML attributes, etc.
+        functions: "#1f68ca",           // JS functions/operators
+        functionCall: "#1f68ca",        // function execution
+        variables: "#c0000b",           // JS variables, HTML Tags
+        bitwiseOperators: "#128757",    // globals, bitwise operators, regex (i.e. the forward slashes in regex)
+        keywords: "#36a249",            // reserved keywords (const, return, public, private, etc.)
+        embedded: "#c4390a",            // ?
+        info: "#609aeb",
+        warning: "#f2b732",
+        error: "#c0000b",
         debug: "#b267e6",
-        broken_background: "#e05252",
+        broken_background: "#f73e57",
         broken_foreground: "#fff",
-        deprecated_background: "#d27b53",
+        deprecated_background: "#d88817",
         deprecated_foreground: "#fff",
         notImplemented_background: "#747369",
         notImplemented_foreground: "#fff"
@@ -30,9 +44,14 @@ module.exports = function Theme (Ui) {
 
     const ui = new Ui({
         editorBackground: colors.background,
-        editorRuler: "#383e4a",
-        editorHighlightBackground: "#3e4451",
-        editorLineHighlight: "#383e4a"
+        editorRuler: "#02285a",
+        editorHighlightBackground: "#033373",
+        editorLineHighlight: "#02285a",
+        editorSelectionBackground: "#033373",
+        gitNew: "#128757",
+        gitModified: "#c4390a",
+        gitRemoved: "#02234b",
+        gitConflict: "#ab1a2f"
     }).colors;
 
     return {

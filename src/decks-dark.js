@@ -1,38 +1,72 @@
 module.exports = function Theme (Ui) {
+                                        // #011228
+                                        // #b267e6
+                                        // #ff86ff
+                                        // #28dcfd
+                                        // #19e6ce
+                                        // #13b3a0
+                                        // #4bf797
+                                        // #fde827
+                                        // #fd8727
+                                        // #fc094a
+                                        // #ca0b5e
+
     const colors = {
-        background: "#282c34ff",        // dark background
-        foreground:  "#bbbbbb",         // "#bbbbbbff" // text
+        background: "#011228",          // dark background
+        foreground:  "#bbbbbb",         // text
         text: "#abb2bf",
         comments: "#5c6370",            // comments and punctuation
-        params: "#a6b2c0",              // "#b9c0ca" // function params / commas
-        strings: "#98c379",             // "#98c378"
-        markupDiff: "#e0c285",
+        params: "#a6b2c0",              // function params / commas
+        strings: "#28dcfd",
+        markupDiff: "#cdbb20",
         diff: "#569cd6",
-        numbers: "#e5c07b",             // "#c49060" // JS numbers, md bold, java imports, etc.
-        constants: "#d19a66",           // "#D18C4E", #D2945D // JS constants, HTML attributes, etc.
-        functions: "#61afef",           // JS functions/operators
-        functionCall: "#61afef",        // function execution
-        variables: "#e06c75",           // JS variables, HTML Tags
-        bitwiseOperators: "#56b6c2",    // globals, bitwise operators, regex (i.e. the forward slashes in regex)
-        keywords: "#c678dd",            // "#C178DD" "#C679DD" // reserved keywords (const, return, public, private, etc.)
-        embedded: "#be4f44",            // ?
+        numbers: "#fde827",             // JS numbers, md bold, java imports, etc.
+        constants: "#fd8727",           // JS constants, HTML attributes, etc.
+        functions: "#31b7e8",           // JS functions/operators
+        functionCall: "#cc6bcc",        // function execution
+        variables: "#ff86ff",           // JS variables, HTML Tags
+        bitwiseOperators: "#19e6ce",    // globals, bitwise operators, regex (i.e. the forward slashes in regex)
+        keywords: "#4bf797",            // reserved keywords (const, return, public, private, etc.)
+        embedded: "#d74c88",            // ?
         info: "#6796e6",
-        warning: "#cd9731",
-        error: "#f44747",               // "#ff0000"
+        warning: "#ca8d0b",
+        error: "#fc094a",
         debug: "#b267e6",
-        broken_background: "#e05252",
+        broken_background: "#ca0b5e",
         broken_foreground: "#fff",
-        deprecated_background: "#d27b53",
+        deprecated_background: "#d74c88",
         deprecated_foreground: "#fff",
         notImplemented_background: "#747369",
         notImplemented_foreground: "#fff"
     }
 
     const ui = new Ui({
+        topBarBackground: "#eeeeee",
+        bottomBarBackground: "#071e3c",
+        nativeBackground: "#02234b",
+        nativeHover: "#033373",
+        nativeBorder: "#040232",
         editorBackground: colors.background,
-        editorRuler: "#383e4a",
-        editorHighlightBackground: "#3e4451",
-        editorLineHighlight: "#383e4a"
+        editorText: "#b2b9c8",
+        editorWidgetBackground: "#21252b",
+        editorSelectionBackground: "#033373",
+        editorHighlightBackground: "#033373",
+        editorInsertedBackground: "#00809b",
+        editorLineHighlight: "#02285a",
+        editorCursor: "#f8f8f0",
+        editorWhitespaceForeground: "#3b4048",
+        editorBorder: "#040232",
+        editorRuler: "#02285a",
+        tabActiveBackground: "#033373",
+        tabInactiveBackground: "#071e3c",
+        tabBorder: "#040232",
+        text: "#b2b9c8",
+        highlightedText: "#2387DC",
+        gitNew: "#4bf797",
+        gitModified: "#fde827",
+        gitRemoved: "#b267e6",
+        gitIgnored: "#445672",
+        gitConflict: "#fc094a"
     }).colors;
 
     return {
