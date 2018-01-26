@@ -41,7 +41,7 @@ module.exports = function Theme (Ui) {
     }
 
     return {
-        "name": "Native UI - One Dark",
+        "name": "Native UI - Decks",
         "type": "light",
         "colors": new Ui({ editorBackground: colors.background }).colors,
         "tokenColors": [

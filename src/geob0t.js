@@ -53,7 +53,7 @@ module.exports = function Theme (Ui) {
     }).colors;
 
     return {
-        "name": "Native UI - One Dark",
+        "name": "Native UI - Geob0t",
         "type": "light",
         "colors": ui,
         "tokenColors": [

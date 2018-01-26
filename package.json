@@ -20,35 +20,35 @@
     "contributes": {
         "themes": [{
             "label": "Native UI - One Dark",
-            "uiTheme": "vs",
+            "uiTheme": "vs-dark",
             "path": "./themes/one-dark.json"
         }, {
             "label": "Native UI - CMU",
-            "uiTheme": "vs",
+            "uiTheme": "vs-dark",
             "path": "./themes/cmu.json"
         }, {
             "label": "Native UI - CMU (Dark)",
-            "uiTheme": "vs",
+            "uiTheme": "vs-dark",
             "path": "./themes/cmu-dark.json"
         }, {
             "label": "Native UI - Decks",
-            "uiTheme": "vs",
+            "uiTheme": "vs-dark",
             "path": "./themes/decks.json"
         }, {
             "label": "Native UI - Decks (Dark)",
-            "uiTheme": "vs",
+            "uiTheme": "vs-dark",
             "path": "./themes/decks-dark.json"
         }, {
             "label": "Native UI - Geob0t",
-            "uiTheme": "vs",
+            "uiTheme": "vs-dark",
             "path": "./themes/geob0t.json"
         }, {
             "label": "Native UI - Geob0t (Dim)",
-            "uiTheme": "vs",
+            "uiTheme": "vs-dark",
             "path": "./themes/geob0t-dim.json"
         }, {
             "label": "Native UI - Geob0t (Dark)",
-            "uiTheme": "vs",
+            "uiTheme": "vs-dark",
             "path": "./themes/geob0t-dark.json"
         }]
     }

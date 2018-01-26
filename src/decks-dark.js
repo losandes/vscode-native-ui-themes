@@ -70,8 +70,8 @@ module.exports = function Theme (Ui) {
     }).colors;
 
     return {
-        "name": "Native UI - One Dark",
-        "type": "light",
+        "name": "Native UI - Decks (Dark)",
+        "type": "dark",
         "colors": ui,
         "tokenColors": [
             {
