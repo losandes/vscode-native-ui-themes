@@ -30,6 +30,7 @@ module.exports = function Ui (ui) {
 
     return {
         colors: {
+            // more info: https://medium.com/@caludio/how-to-write-a-visual-studio-code-color-theme-from-scratch-7ccb7e5da2aa
             // more info: https://code.visualstudio.com/docs/getstarted/themes
             // more info: https://github.com/Microsoft/vscode/issues/3112
             // inspired by: https://github.com/fv0/native-ui/blob/master/styles/ui-variables.less
