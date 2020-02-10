@@ -23,6 +23,10 @@
             "uiTheme": "vs-dark",
             "path": "./themes/one-dark.json"
         }, {
+            "label": "Native UI - Seti",
+            "uiTheme": "vs-dark",
+            "path": "./themes/seti.json"
+        }, {
             "label": "Native UI - CMU",
             "uiTheme": "vs-dark",
             "path": "./themes/cmu.json"

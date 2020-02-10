@@ -1,6 +1,7 @@
 const fs = require('fs')
 const Ui = require('./Ui.js')
 const OneDark = require('./OneDark.js')
+const Seti = require('./seti.js')
 const Cmu = require('./cmu.js')
 const CmuDark = require('./cmu-dark.js')
 const Decks = require('./decks.js')
@@ -12,6 +13,9 @@ const Geob0tDark = require('./geob0t-dark.js')
 const themes = [{
   name: 'one-dark',
   definition: new OneDark(Ui)
+}, {
+    name: 'seti',
+    definition: new Seti(Ui)
 }, {
     name: 'cmu',
     definition: new Cmu(Ui)
