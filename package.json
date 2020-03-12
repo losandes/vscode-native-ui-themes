@@ -54,6 +54,11 @@
             "label": "Native UI - Geob0t (Dark)",
             "uiTheme": "vs-dark",
             "path": "./themes/geob0t-dark.json"
+        }],
+        "iconThemes": [{
+            "id": "native-file-icons",
+            "label": "Native File Icons",
+            "path": "./icons/file-icons-icon-theme.json"
         }]
     }
 }
