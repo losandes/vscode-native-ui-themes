@@ -58,7 +58,7 @@
         "iconThemes": [{
             "id": "native-file-icons",
             "label": "Native File Icons",
-            "path": "./icons/file-icons-icon-theme.json"
+            "path": "./icons/file-icons-theme.json"
         }]
     }
 }
