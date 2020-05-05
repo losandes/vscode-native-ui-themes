@@ -5,6 +5,7 @@ module.exports = function Ui (ui) {
     const bottomBarBackground = ui.bottomBarBackground || "#ebebeb"
     const nativeBackground = ui.nativeBackground || "#e1e1e1"
     const nativeHover = ui.nativeHover || "#c7c7c7"
+    const nonNativeHover = ui.nonNativeHover || ui.nativeHover || "#c7c7c7"
     const nativeBorder = ui.nativeBorder || "#c7c7c7"
     const editorBackground = ui.editorBackground ||  "#282c34"
     const editorText = ui.editorText || "#b2b9c8"
@@ -42,8 +43,8 @@ module.exports = function Ui (ui) {
             "statusBar.noFolderForeground": text,
             "list.hoverBackground": nativeHover,
             "list.activeSelectionBackground": nativeHover,
-            "list.inactiveSelectionBackground": nativeHover,
-            "list.focusBackground": nativeHover,
+            "list.inactiveSelectionBackground": nativeHover, // file explorer bg
+            "list.focusBackground": nonNativeHover, // cmd+shift+p bg
             "list.activeSelectionForeground": text,
             "list.inactiveSelectionForeground": text,
             "list.highlightForeground": highlightedText,

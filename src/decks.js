@@ -43,7 +43,10 @@ module.exports = function Theme (Ui) {
     return {
         "name": "Native UI - Decks",
         "type": "light",
-        "colors": new Ui({ editorBackground: colors.background }).colors,
+        "colors": new Ui({
+            editorBackground: colors.background,
+            nonNativeHover: colors.comments,
+        }).colors,
         "tokenColors": [
             {
                 "settings": {

@@ -49,7 +49,8 @@ module.exports = function Theme (Ui) {
         editorBackground: "#0e1112ff",
         editorRuler: "#242c2f",
         editorHighlightBackground: "#242c2f",
-        editorLineHighlight: "#242c2f"
+        editorLineHighlight: "#242c2f",
+        nonNativeHover: "#4d5a5e",
     }).colors;
 
     return {

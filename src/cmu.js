@@ -51,7 +51,8 @@ module.exports = function Theme (Ui) {
         gitNew: "#128757",
         gitModified: "#c4390a",
         gitRemoved: "#02234b",
-        gitConflict: "#ab1a2f"
+        gitConflict: "#ab1a2f",
+        nonNativeHover: "#5c6370",
     }).colors;
 
     return {
