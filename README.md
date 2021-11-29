@@ -19,7 +19,7 @@ npm run buildAndCopy
 The following will remove this extension from `~/.vscode/extensions`.
 
 ```Shell
-npm remove
+npm run remove
 # then restart VSCode
 ```
 
