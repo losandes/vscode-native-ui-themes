@@ -9,9 +9,8 @@ The following will build the themes, and copy them to `~/.vscode/extensions`.
 
 ```Shell
 git clone
-npm install
-npm run buildAndCopy
-# then restart VSCode
+pnpm run buildAndCopy
+# then restart VSCodep
 ```
 
 ### Removing this extension
@@ -19,7 +18,7 @@ npm run buildAndCopy
 The following will remove this extension from `~/.vscode/extensions`.
 
 ```Shell
-npm run remove
+pnpm run remove
 # then restart VSCode
 ```
 

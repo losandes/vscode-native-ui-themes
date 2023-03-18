@@ -6,8 +6,8 @@
     "publisher": "losandes",
     "scripts": {
         "build": "node src/build",
-        "buildAndCopy": "npm run build; npm run copy;",
-        "copy": "npm run remove; npm run copy:extension",
+        "buildAndCopy": "pnpm run build; pnpm run copy;",
+        "copy": "pnpm run remove; pnpm run copy:extension",
         "copy:extension": "cd ../; cp -R vscode-native-ui-themes/. ~/.vscode/extensions/vscode-native-ui-themes",
         "remove": "cd ~/.vscode/extensions; rm -rf vscode-native-ui-themes;"
     },
