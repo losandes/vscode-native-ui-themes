@@ -7,8 +7,8 @@
     "scripts": {
         "build": "node src/build",
         "buildAndCopy": "pnpm run build; pnpm run copy;",
-        "copy": "pnpm run remove; pnpm run copy:extension",
-        "copy:extension": "cd ../; cp -R vscode-native-ui-themes/. ~/.vscode/extensions/vscode-native-ui-themes",
+        "copy": "pnpm run remove; pnpm run _copy",
+        "_copy": "cd ../; cp -R vscode-native-ui-themes/. ~/.vscode/extensions/vscode-native-ui-themes",
         "remove": "cd ~/.vscode/extensions; rm -rf vscode-native-ui-themes;"
     },
     "engines": {
@@ -54,6 +54,10 @@
             "label": "Native UI - Geob0t (Dark)",
             "uiTheme": "vs-dark",
             "path": "./themes/geob0t-dark.json"
+        }, {
+            "label": "Native UI - Dracula Soft",
+            "uiTheme": "vs-dark",
+            "path": "./theme/dracula-soft.json"
         }],
         "iconThemes": [{
             "id": "native-file-icons",
